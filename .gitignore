@@ -67,5 +67,16 @@
 !*.elf
 !*.bmm
 !*.xmp
-
+# Vivado 임시 파일 무시
+*.backup*
+*.jou
+*.log
+*.str
+*.drc
+*.xml
+*.html
+*.xdc~
+*.xdc.bak
+*.pb
+*.bak
 # End of https://www.toptal.com/developers/gitignore/api/vivado
