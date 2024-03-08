@@ -1,0 +1,302 @@
+/*
+
+Xilinx Vivado v2020.2 (64-bit) [Major: 2020, Minor: 2]
+SW Build: 3064766 on Wed Nov 18 09:12:45 MST 2020
+IP Build: 3064653 on Wed Nov 18 14:17:31 MST 2020
+
+Process ID (PID): 12240
+License: Customer
+Mode: GUI Mode
+
+Current time: 	Thu Oct 19 15:33:02 KST 2023
+Time zone: 	Korean Standard Time (Asia/Seoul)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 16
+
+Screen size: 2560x1440
+Screen resolution (DPI): 100
+Available screens: 1
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+Scale size: 12
+
+Java version: 	11.0.2 64-bit
+Java home: 	C:/Xilinx/Vivado/2020.2/tps/win64/jre11.0.2
+Java executable location: 	C:/Xilinx/Vivado/2020.2/tps/win64/jre11.0.2/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	kccistc
+User home directory: C:/Users/kccistc
+User working directory: D:/project/Verilog/RISC_V_RV32i_20231019 - 복사본
+User country: 	KR
+User language: 	ko
+User locale: 	ko_KR
+
+RDI_BASEROOT: C:/Xilinx/Vivado
+HDI_APPROOT: C:/Xilinx/Vivado/2020.2
+RDI_DATADIR: C:/Xilinx/Vivado/2020.2/data
+RDI_BINDIR: C:/Xilinx/Vivado/2020.2/bin
+
+Vivado preferences file location: C:/Users/kccistc/AppData/Roaming/Xilinx/Vivado/2020.2/vivado.xml
+Vivado preferences directory: C:/Users/kccistc/AppData/Roaming/Xilinx/Vivado/2020.2/
+Vivado layouts directory: C:/Users/kccistc/AppData/Roaming/Xilinx/Vivado/2020.2/data/layouts
+PlanAhead jar file location: 	C:/Xilinx/Vivado/2020.2/lib/classes/planAhead.jar
+Vivado log file location: 	D:/project/Verilog/RISC_V_RV32i_20231019 - 복사본/vivado.log
+Vivado journal file location: 	D:/project/Verilog/RISC_V_RV32i_20231019 - 복사본/vivado.jou
+Engine tmp dir: 	D:/project/Verilog/RISC_V_RV32i_20231019 - 복사본/.Xil/Vivado-12240-603-07
+
+Xilinx Environment Variables
+----------------------------
+XILINX: C:/Xilinx/Vivado/2020.2/ids_lite/ISE
+XILINX_DSP: C:/Xilinx/Vivado/2020.2/ids_lite/ISE
+XILINX_HLS: C:/Xilinx/Vitis_HLS/2020.2
+XILINX_PLANAHEAD: C:/Xilinx/Vivado/2020.2
+XILINX_SDK: C:/Xilinx/Vitis/2020.2
+XILINX_VITIS: C:/Xilinx/Vitis/2020.2
+XILINX_VIVADO: C:/Xilinx/Vivado/2020.2
+XILINX_VIVADO_HLS: C:/Xilinx/Vivado/2020.2
+
+
+GUI allocated memory:	137 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 1,099 MB
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// TclEventType: PROJECT_OPEN_DIALOG
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// bz (cr):  Open Project : addNotify
+// Opening Vivado Project: D:\project\Verilog\RISC_V_RV32i_20231019 - 복사본\RISC_V_RV32i_20231019.xpr. Version: Vivado v2020.2 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project {D:/project/Verilog/RISC_V_RV32i_20231019 - 복사본/RISC_V_RV32i_20231019.xpr} 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 89 MB (+90470kb) [00:00:09]
+// [Engine Memory]: 1,099 MB (+1000831kb) [00:00:09]
+// [GUI Memory]: 110 MB (+17346kb) [00:00:09]
+// WARNING: HEventQueue.dispatchEvent() is taking  1457 ms.
+// Tcl Message: open_project {D:/project/Verilog/RISC_V_RV32i_20231019 - 복사본/RISC_V_RV32i_20231019.xpr} 
+// Tcl Message: INFO: [Project 1-313] Project file moved from 'D:/project/Verilog/DedicatedProcessor_1018 - RegisterFile/RISC_V_RV32i_20231019' since last save. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.2/data/ip'. 
+// Project name: RISC_V_RV32i_20231019; location: D:/project/Verilog/RISC_V_RV32i_20231019 - 복사본; part: xc7a35tcpg236-1
+dismissDialog("Open Project"); // bz
+// HMemoryUtils.trashcanNow. Engine heap size: 1,099 MB. GUI used memory: 64 MB. Current time: 10/19/23, 3:33:03 PM KST
+// Tcl Command: 'rdi::info_commands {device::*}'
+// Tcl Command: 'rdi::info_commands {debug::*}'
+// Tcl Command: 'rdi::info_commands {*}'
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 12 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, RV32I (RV32I.v)]", 2); // D
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, RV32I (RV32I.v), U_DP : DataPath (DataPath.v)]", 4); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, RV32I (RV32I.v), U_DP : DataPath (DataPath.v)]", 4, true); // D - Node
+// [GUI Memory]: 130 MB (+15439kb) [00:00:29]
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, RV32I (RV32I.v), U_DP : DataPath (DataPath.v)]", 4, true, false, false, false, false, true); // D - Double Click - Node
+selectCodeEditor("DataPath.v", 109, 820); // bP
+selectCodeEditor("DataPath.v", 33, 819); // bP
+typeControlKey((HResource) null, "DataPath.v", 'v'); // bP
+selectCodeEditor("DataPath.v", 205, 575); // bP
+selectCodeEditor("DataPath.v", 211, 555); // bP
+selectCodeEditor("DataPath.v", 211, 555); // bP
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // E
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("DataPath.v", 105, 556); // bP
+// [GUI Memory]: 138 MB (+1504kb) [00:01:57]
+// Elapsed time: 108 seconds
+selectCodeEditor("DataPath.v", 100, 823); // bP
+selectCodeEditor("DataPath.v", 2, 580); // bP
+typeControlKey((HResource) null, "DataPath.v", 'c'); // bP
+selectCodeEditor("DataPath.v", 91, 832); // bP
+typeControlKey((HResource) null, "DataPath.v", 'v'); // bP
+// Elapsed time: 27 seconds
+selectCodeEditor("DataPath.v", 69, 695); // bP
+typeControlKey((HResource) null, "DataPath.v", 'c'); // bP
+selectCodeEditor("DataPath.v", 14, 810); // bP
+typeControlKey((HResource) null, "DataPath.v", 'v'); // bP
+selectCodeEditor("DataPath.v", 23, 810); // bP
+selectCodeEditor("DataPath.v", 90, 825); // bP
+typeControlKey((HResource) null, "DataPath.v", 'c'); // bP
+selectCodeEditor("DataPath.v", 83, 810); // bP
+selectCodeEditor("DataPath.v", 23, 830); // bP
+selectCodeEditor("DataPath.v", 15, 807); // bP
+// Elapsed time: 66 seconds
+selectCodeEditor("DataPath.v", 94, 794); // bP
+selectCodeEditor("DataPath.v", 279, 771); // bP
+// Elapsed time: 95 seconds
+selectCodeEditor("DataPath.v", 151, 766); // bP
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Verilog]", 1); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Verilog, RV32i_define.v]", 2, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Verilog, RV32i_define.v]", 2, false, false, false, false, false, true); // D - Double Click
+selectCodeEditor("RV32i_define.v", 53, 46); // bP
+typeControlKey((HResource) null, "RV32i_define.v", 'c'); // bP
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "DataPath.v", 1); // m
+selectCodeEditor("DataPath.v", 157, 771); // bP
+typeControlKey((HResource) null, "DataPath.v", 'v'); // bP
+// Elapsed time: 78 seconds
+selectCodeEditor("DataPath.v", 204, 769); // bP
+// Elapsed time: 17 seconds
+selectCodeEditor("DataPath.v", 159, 772); // bP
+// Elapsed time: 21 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "RV32i_define.v", 2); // m
+// Elapsed time: 15 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "DataPath.v", 1); // m
+selectCodeEditor("DataPath.v", 210, 736); // bP
+// Elapsed time: 59 seconds
+selectCodeEditor("DataPath.v", 73, 749); // bP
+typeControlKey((HResource) null, "DataPath.v", 'c'); // bP
+selectCodeEditor("DataPath.v", 450, 756); // bP
+// Elapsed time: 16 seconds
+selectCodeEditor("DataPath.v", 444, 749); // bP
+typeControlKey((HResource) null, "DataPath.v", 'v'); // bP
+selectCodeEditor("DataPath.v", 492, 697); // bP
+selectCodeEditor("DataPath.v", 469, 774); // bP
+selectCodeEditor("DataPath.v", 408, 714); // bP
+selectCodeEditor("DataPath.v", 366, 751); // bP
+// Elapsed time: 23 seconds
+selectCodeEditor("DataPath.v", 523, 773); // bP
+selectCodeEditor("DataPath.v", 505, 761); // bP
+selectCodeEditor("DataPath.v", 497, 754); // bP
+typeControlKey((HResource) null, "DataPath.v", 'v'); // bP
+selectCodeEditor("DataPath.v", 465, 812); // bP
+selectCodeEditor("DataPath.v", 479, 774); // bP
+// Elapsed time: 12 seconds
+selectCodeEditor("DataPath.v", 469, 776); // bP
+typeControlKey((HResource) null, "DataPath.v", 'v'); // bP
+selectCodeEditor("DataPath.v", 537, 703); // bP
+selectCodeEditor("DataPath.v", 488, 796); // bP
+selectCodeEditor("DataPath.v", 487, 788); // bP
+selectCodeEditor("DataPath.v", 387, 791); // bP
+selectCodeEditor("DataPath.v", 486, 787); // bP
+selectCodeEditor("DataPath.v", 103, 785); // bP
+selectCodeEditor("DataPath.v", 95, 786); // bP
+selectCodeEditor("DataPath.v", 194, 707); // bP
+// Elapsed time: 27 seconds
+selectCodeEditor("DataPath.v", 62, 811); // bP
+typeControlKey((HResource) null, "DataPath.v", 'v'); // bP
+selectCodeEditor("DataPath.v", 150, 647); // bP
+selectCodeEditor("DataPath.v", 15, 699); // bP
+selectCodeEditor("DataPath.v", 368, 788); // bP
+// Elapsed time: 19 seconds
+selectCodeEditor("DataPath.v", 474, 511); // bP
+selectCodeEditor("DataPath.v", 3, 292); // bP
+typeControlKey((HResource) null, "DataPath.v", 'c'); // bP
+selectCodeEditor("DataPath.v", 4, 618); // bP
+typeControlKey((HResource) null, "DataPath.v", 'v'); // bP
+selectCodeEditor("DataPath.v", 0, 273); // bP
+selectCodeEditor("DataPath.v", 41, 295); // bP
+// Elapsed time: 22 seconds
+selectCodeEditor("DataPath.v", 67, 673); // bP
+selectCodeEditor("DataPath.v", 62, 679); // bP
+selectCodeEditor("DataPath.v", 41, 333); // bP
+selectCodeEditor("DataPath.v", 69, 451); // bP
+// Elapsed time: 12 seconds
+selectCodeEditor("DataPath.v", 0, 581); // bP
+typeControlKey((HResource) null, "DataPath.v", 'c'); // bP
+selectCodeEditor("DataPath.v", 2, 479); // bP
+typeControlKey((HResource) null, "DataPath.v", 'v'); // bP
+selectCodeEditor("DataPath.v", 2, 482); // bP
+selectCodeEditor("DataPath.v", 42, 497); // bP
+selectCodeEditor("DataPath.v", 39, 496); // bP
+// Elapsed time: 24 seconds
+selectCodeEditor("DataPath.v", 101, 519); // bP
+selectCodeEditor("DataPath.v", 80, 540); // bP
+// Elapsed time: 17 seconds
+selectCodeEditor("DataPath.v", 56, 547); // bP
+typeControlKey((HResource) null, "DataPath.v", 'c'); // bP
+selectCodeEditor("DataPath.v", 532, 365); // bP
+typeControlKey((HResource) null, "DataPath.v", 'v'); // bP
+selectCodeEditor("DataPath.v", 43, 308); // bP
+selectCodeEditor("DataPath.v", 166, 341); // bP
+selectCodeEditor("DataPath.v", 60, 331); // bP
+// Elapsed time: 21 seconds
+selectCodeEditor("DataPath.v", 59, 328); // bP
+// Elapsed time: 29 seconds
+selectCodeEditor("DataPath.v", 631, 472); // bP
+selectCodeEditor("DataPath.v", 128, 454); // bP
+selectCodeEditor("DataPath.v", 126, 346); // bP
+selectCodeEditor("DataPath.v", 160, 332); // bP
+selectCodeEditor("DataPath.v", 201, 336); // bP
+// Elapsed time: 14 seconds
+selectCodeEditor("DataPath.v", 124, 355); // bP
+// Elapsed time: 11 seconds
+selectCodeEditor("DataPath.v", 110, 368); // bP
+// Elapsed time: 30 seconds
+selectCodeEditor("DataPath.v", 150, 390); // bP
+typeControlKey((HResource) null, "DataPath.v", 'c'); // bP
+selectCodeEditor("DataPath.v", 605, 314); // bP
+typeControlKey((HResource) null, "DataPath.v", 'v'); // bP
+selectCodeEditor("DataPath.v", 59, 278); // bP
+// Elapsed time: 30 seconds
+selectCodeEditor("DataPath.v", 58, 291); // bP
+selectCodeEditor("DataPath.v", 54, 291); // bP
+typeControlKey((HResource) null, "DataPath.v", 'c'); // bP
+selectCodeEditor("DataPath.v", 150, 698); // bP
+selectCodeEditor("DataPath.v", 157, 696); // bP
+selectCodeEditor("DataPath.v", 203, 618); // bP
+// Elapsed time: 11 seconds
+typeControlKey((HResource) null, "DataPath.v", 'v'); // bP
+// Elapsed time: 15 seconds
+selectCodeEditor("DataPath.v", 155, 653); // bP
+selectCodeEditor("DataPath.v", 242, 685); // bP
+selectCodeEditor("DataPath.v", 143, 428); // bP
+typeControlKey((HResource) null, "DataPath.v", 'c'); // bP
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Project Summary", 0); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "DataPath.v", 1); // m
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, RV32I (RV32I.v), U_CU : ControlUnit (ControlUnit.v)]", 4, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, RV32I (RV32I.v), U_CU : ControlUnit (ControlUnit.v)]", 4, false, false, false, false, false, true); // D - Double Click
+// [GUI Memory]: 146 MB (+1679kb) [00:18:03]
+selectCodeEditor("ControlUnit.v", 242, 530); // bP
+typeControlKey((HResource) null, "ControlUnit.v", 'v'); // bP
+selectCodeEditor("ControlUnit.v", 242, 530); // bP
+selectCodeEditor("ControlUnit.v", 313, 604); // bP
+selectCodeEditor("ControlUnit.v", 177, 555); // bP
+selectCodeEditor("ControlUnit.v", 277, 602); // bP
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // E
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "DataPath.v", 1); // m
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // E
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("DataPath.v", 98, 313); // bP
+// Elapsed time: 13 seconds
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // E
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 13 seconds
+collapseTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design]", 12); // u
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design]", 12); // u
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design, Schematic]", 15, false); // u
+// A (cr): Elaborate Design: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// bz (cr):  Open Elaborated Design : addNotify
+dismissDialog("Elaborate Design"); // A
+// Tcl Message: synth_design -rtl -rtl_skip_mlo -name rtl_1 
+// Tcl Message: Command: synth_design -rtl -rtl_skip_mlo -name rtl_1 Starting synth_design Using part: xc7a35tcpg236-1 Top: RV32I 
+// TclEventType: ELABORATE_START
+// HMemoryUtils.trashcanNow. Engine heap size: 1,463 MB. GUI used memory: 83 MB. Current time: 10/19/23, 3:51:58 PM KST

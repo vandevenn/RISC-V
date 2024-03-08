@@ -1,0 +1,26 @@
+0.7
+2020.2
+Nov 18 2020
+09:47:47
+D:/project/Verilog/RISC_V_RV32i_20231020 - Ram/RISC_V_RV32i_20231019.srcs/sources_1/new/RV32i_define.v,1697960441,verilog,,,,,,,,,,,,
+D:/project/Verilog/RISC_V_RV32i_20231023 - typeJ/RISC_V_RV32i_20231019.srcs/sources_1/new/RV32i_define.v,1698049069,verilog,,,,,,,,,,,,
+D:/project/Verilog/RISC_V_RV32i_20231024 -GPO/RISC_V_RV32i_20231019.srcs/sources_1/new/RV32i_define.v,1698049069,verilog,,,,,,,,,,,,
+D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.sim/sim_1/behav/xsim/glbl.v,1605673889,verilog,,,,glbl,,,,,,,,
+D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sim_1/new/tb_RV32i.v,1698123399,verilog,,,,tb_RV32i,,,,,,,,
+D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/ControlUnit.v,1698830865,verilog,,D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/스탑워치 파일/FNDCONTROLLER/Counter.v,D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/RV32i_define.v,ControlUnit,,,,,,,,
+D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/DataPath.v,1698833806,verilog,,D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/스탑워치 파일/FNDCONTROLLER/Decoder2x4.v,D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/RV32i_define.v,ALU;Adder;DataPath;ImeGen;ROM;RegFile;mux_2x1;register;shifter,,,,,,,,
+D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/Fnd_controller_Mem.v,1698192967,verilog,,D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/GPI.v,,Fnd_controller_Mem,,,,,,,,
+D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/GPI.v,1698215144,verilog,,D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/GPO.v,,GPI,,,,,,,,
+D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/GPO.v,1698212917,verilog,,D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/Memory.v,,GPO,,,,,,,,
+D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/Memory.v,1698192098,verilog,,D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/스탑워치 파일/FNDCONTROLLER/Mux4X1.v,,Memory,,,,,,,,
+D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/RV32I.v,1698476236,verilog,,D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/RV32i_MCU.v,,RV32I,,,,,,,,
+D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/RV32i_MCU.v,1698476335,verilog,,D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/Ram.v,,Decoder_bus;RV32i_MCU;mux_bus,,,,,,,,
+D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/RV32i_define.v,1698049069,verilog,,,,,,,,,,,,
+D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/Ram.v,1698475996,verilog,,D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sim_1/new/tb_RV32i.v,,Ram,,,,,,,,
+D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/스탑워치 파일/FNDCONTROLLER/BCDtoFND.v,1696919374,verilog,,D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/스탑워치 파일/FNDCONTROLLER/ClockDevider.v,,BCDtoFND,,,,,,,,
+D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/스탑워치 파일/FNDCONTROLLER/ClockDevider.v,1696584933,verilog,,D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/ControlUnit.v,,ClockDevider,,,,,,,,
+D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/스탑워치 파일/FNDCONTROLLER/Counter.v,1696919387,verilog,,D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/DataPath.v,,Counter,,,,,,,,
+D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/스탑워치 파일/FNDCONTROLLER/Decoder2x4.v,1696919399,verilog,,D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/스탑워치 파일/FNDCONTROLLER/DigitSplitter.v,,Decoder2x4,,,,,,,,
+D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/스탑워치 파일/FNDCONTROLLER/DigitSplitter.v,1696919407,verilog,,D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/스탑워치 파일/FNDCONTROLLER/Fnd_controller.v,,DigitSplitter,,,,,,,,
+D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/스탑워치 파일/FNDCONTROLLER/Fnd_controller.v,1696919415,verilog,,D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/Fnd_controller_Mem.v,,Fnd_controller,,,,,,,,
+D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/스탑워치 파일/FNDCONTROLLER/Mux4X1.v,1696919426,verilog,,D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/RV32I.v,,Mux4X1,,,,,,,,

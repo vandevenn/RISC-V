@@ -1,0 +1,1930 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Sat Oct 28 15:06:38 2023
+# Process ID: 13212
+# Current directory: D:/project/Verilog/RISC_V_RV32i_20231025 -GPI
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent6520 D:\project\Verilog\RISC_V_RV32i_20231025 -GPI\RISC_V_RV32i_20231019.xpr
+# Log file: D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/vivado.log
+# Journal file: D:/project/Verilog/RISC_V_RV32i_20231025 -GPI\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.xpr}
+WARNING: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.gen/sources_1'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/Uart/baudrate_generator.v'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/Uart/receiver.v'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/Uart/Transmitter.v'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.2/data/ip'.
+open_project: Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 1108.109 ; gain = 0.000
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files {{D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/Uart/Transmitter.v}}] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files {{D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/Uart/baudrate_generator.v}}] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files {{D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/Uart/receiver.v}}] -no_script -reset -force -quiet
+remove_files  {{D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/Uart/Transmitter.v} {D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/Uart/baudrate_generator.v} {D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/Uart/receiver.v}}
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2020.2
+  **** Build date : Nov 18 2020 at 10:01:48
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2020.2
+  ****** Build date   : Nov 04 2020-06:02:56
+    **** Build number : 2020.2.1604437376
+      ** Copyright 2017-2020 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 1108.109 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183B31B0BA
+set_property PROGRAM.FILE {D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.runs/impl_1/RV32i_MCU.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1435] Device xc7a35t (JTAG device index = 0) is not programmed (DONE status = 0).
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.runs/impl_1/RV32i_MCU.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183B31B0BA
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183B31B0BA
+INFO: [Labtools 27-1435] Device xc7a35t (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+[Sat Oct 28 15:34:04 2023] Launched synth_1...
+Run output will be captured here: D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.runs/synth_1/runme.log
+[Sat Oct 28 15:34:05 2023] Launched impl_1...
+Run output will be captured here: D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.runs/impl_1/RV32i_MCU.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+open_run impl_1
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.024 . Memory (MB): peak = 3033.945 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 132 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2020.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.151 . Memory (MB): peak = 3716.125 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.151 . Memory (MB): peak = 3716.125 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 3716.125 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 44 instances were transformed.
+  RAM256X1S => RAM256X1S (MUXF7(x2), MUXF8, RAMS64E(x4)): 32 instances
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 12 instances
+
+open_run: Time (s): cpu = 00:00:08 ; elapsed = 00:00:17 . Memory (MB): peak = 3855.480 ; gain = 1116.617
+CRITICAL WARNING: [Timing 38-282] The design failed to meet the timing requirements. Please see the timing summary report for details on the timing violations.
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+Command: synth_design -rtl -rtl_skip_mlo -name rtl_1
+Starting synth_design
+Using part: xc7a35tcpg236-1
+Top: RV32i_MCU
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 4144.957 ; gain = 202.195
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'RV32i_MCU' [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/RV32i_MCU.v:2]
+INFO: [Synth 8-6157] synthesizing module 'RV32I' [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/RV32I.v:3]
+INFO: [Synth 8-6157] synthesizing module 'ControlUnit' [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/ControlUnit.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'ControlUnit' (1#1) [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/ControlUnit.v:4]
+WARNING: [Synth 8-689] width (5) of port connection 'ALUControl' does not match port width (7) of module 'ControlUnit' [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/RV32I.v:34]
+INFO: [Synth 8-6157] synthesizing module 'DataPath' [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/DataPath.v:4]
+INFO: [Synth 8-6157] synthesizing module 'mux_2x1' [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/DataPath.v:257]
+INFO: [Synth 8-6155] done synthesizing module 'mux_2x1' (2#1) [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/DataPath.v:257]
+INFO: [Synth 8-6157] synthesizing module 'register' [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/DataPath.v:181]
+INFO: [Synth 8-6155] done synthesizing module 'register' (3#1) [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/DataPath.v:181]
+INFO: [Synth 8-6157] synthesizing module 'Adder' [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/DataPath.v:172]
+INFO: [Synth 8-6155] done synthesizing module 'Adder' (4#1) [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/DataPath.v:172]
+INFO: [Synth 8-6157] synthesizing module 'ROM' [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/DataPath.v:200]
+INFO: [Synth 8-3876] $readmem data file 'code.mem' is read successfully [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/DataPath.v:207]
+INFO: [Synth 8-6155] done synthesizing module 'ROM' (5#1) [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/DataPath.v:200]
+INFO: [Synth 8-6157] synthesizing module 'RegFile' [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/DataPath.v:141]
+INFO: [Synth 8-6155] done synthesizing module 'RegFile' (6#1) [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/DataPath.v:141]
+INFO: [Synth 8-6157] synthesizing module 'ALU' [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/DataPath.v:214]
+	Parameter ADD bound to: 0 - type: integer 
+	Parameter SUB bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ALU' (7#1) [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/DataPath.v:214]
+INFO: [Synth 8-6157] synthesizing module 'ImeGen' [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/DataPath.v:272]
+INFO: [Synth 8-6155] done synthesizing module 'ImeGen' (8#1) [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/DataPath.v:272]
+INFO: [Synth 8-6157] synthesizing module 'shifter' [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/DataPath.v:296]
+INFO: [Synth 8-6155] done synthesizing module 'shifter' (9#1) [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/DataPath.v:296]
+INFO: [Synth 8-6155] done synthesizing module 'DataPath' (10#1) [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/DataPath.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'RV32I' (11#1) [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/RV32I.v:3]
+INFO: [Synth 8-6157] synthesizing module 'Decoder_bus' [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/RV32i_MCU.v:129]
+INFO: [Synth 8-6155] done synthesizing module 'Decoder_bus' (12#1) [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/RV32i_MCU.v:129]
+INFO: [Synth 8-6157] synthesizing module 'mux_bus' [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/RV32i_MCU.v:147]
+INFO: [Synth 8-6155] done synthesizing module 'mux_bus' (13#1) [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/RV32i_MCU.v:147]
+INFO: [Synth 8-6157] synthesizing module 'Ram' [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/Ram.v:4]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/Ram.v:22]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/Ram.v:36]
+INFO: [Synth 8-6155] done synthesizing module 'Ram' (14#1) [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/Ram.v:4]
+WARNING: [Synth 8-689] width (16) of port connection 'addr' does not match port width (8) of module 'Ram' [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/RV32i_MCU.v:54]
+INFO: [Synth 8-6157] synthesizing module 'GPO' [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/GPO.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'GPO' (15#1) [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/GPO.v:3]
+INFO: [Synth 8-6157] synthesizing module 'Fnd_controller_Mem' [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/Fnd_controller_Mem.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Memory' [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/Memory.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'Memory' (16#1) [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/Memory.v:3]
+WARNING: [Synth 8-689] width (1) of port connection 'rData' does not match port width (32) of module 'Memory' [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/Fnd_controller_Mem.v:44]
+INFO: [Synth 8-6157] synthesizing module 'Fnd_controller' [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/스탑워치 파일/FNDCONTROLLER/Fnd_controller.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ClockDevider' [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/스탑워치 파일/FNDCONTROLLER/ClockDevider.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'ClockDevider' (17#1) [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/스탑워치 파일/FNDCONTROLLER/ClockDevider.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Counter' [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/스탑워치 파일/FNDCONTROLLER/Counter.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Counter' (18#1) [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/스탑워치 파일/FNDCONTROLLER/Counter.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Decoder2x4' [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/스탑워치 파일/FNDCONTROLLER/Decoder2x4.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Decoder2x4' (19#1) [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/스탑워치 파일/FNDCONTROLLER/Decoder2x4.v:23]
+INFO: [Synth 8-6157] synthesizing module 'DigitSplitter' [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/스탑워치 파일/FNDCONTROLLER/DigitSplitter.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'DigitSplitter' (20#1) [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/스탑워치 파일/FNDCONTROLLER/DigitSplitter.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Mux4X1' [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/스탑워치 파일/FNDCONTROLLER/Mux4X1.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Mux4X1' (21#1) [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/스탑워치 파일/FNDCONTROLLER/Mux4X1.v:23]
+INFO: [Synth 8-6157] synthesizing module 'BCDtoFND' [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/스탑워치 파일/FNDCONTROLLER/BCDtoFND.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'BCDtoFND' (22#1) [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/스탑워치 파일/FNDCONTROLLER/BCDtoFND.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Fnd_controller' (23#1) [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/스탑워치 파일/FNDCONTROLLER/Fnd_controller.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Fnd_controller_Mem' (24#1) [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/Fnd_controller_Mem.v:23]
+INFO: [Synth 8-6157] synthesizing module 'GPI' [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/GPI.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'GPI' (25#1) [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/GPI.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'RV32i_MCU' (26#1) [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/RV32i_MCU.v:2]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 4193.121 ; gain = 250.359
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 4211.051 ; gain = 268.289
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 4211.051 ; gain = 268.289
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.029 . Memory (MB): peak = 4211.051 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/project/Verilog/MY_Basys-3-Master.xdc]
+Finished Parsing XDC File [D:/project/Verilog/MY_Basys-3-Master.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 4321.078 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 4346.902 ; gain = 404.141
+57 Infos, 3 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 4346.902 ; gain = 404.141
+refresh_design
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 4511.184 ; gain = 53.074
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'RV32i_MCU' [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/RV32i_MCU.v:2]
+INFO: [Synth 8-6157] synthesizing module 'RV32I' [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/RV32I.v:3]
+INFO: [Synth 8-6157] synthesizing module 'ControlUnit' [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/ControlUnit.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'ControlUnit' (1#1) [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/ControlUnit.v:4]
+WARNING: [Synth 8-689] width (5) of port connection 'ALUControl' does not match port width (7) of module 'ControlUnit' [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/RV32I.v:34]
+INFO: [Synth 8-6157] synthesizing module 'DataPath' [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/DataPath.v:4]
+INFO: [Synth 8-6157] synthesizing module 'mux_2x1' [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/DataPath.v:257]
+INFO: [Synth 8-6155] done synthesizing module 'mux_2x1' (2#1) [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/DataPath.v:257]
+INFO: [Synth 8-6157] synthesizing module 'register' [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/DataPath.v:181]
+INFO: [Synth 8-6155] done synthesizing module 'register' (3#1) [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/DataPath.v:181]
+INFO: [Synth 8-6157] synthesizing module 'Adder' [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/DataPath.v:172]
+INFO: [Synth 8-6155] done synthesizing module 'Adder' (4#1) [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/DataPath.v:172]
+INFO: [Synth 8-6157] synthesizing module 'ROM' [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/DataPath.v:200]
+INFO: [Synth 8-3876] $readmem data file 'code.mem' is read successfully [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/DataPath.v:207]
+INFO: [Synth 8-6155] done synthesizing module 'ROM' (5#1) [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/DataPath.v:200]
+INFO: [Synth 8-6157] synthesizing module 'RegFile' [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/DataPath.v:141]
+INFO: [Synth 8-6155] done synthesizing module 'RegFile' (6#1) [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/DataPath.v:141]
+INFO: [Synth 8-6157] synthesizing module 'ALU' [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/DataPath.v:214]
+	Parameter ADD bound to: 0 - type: integer 
+	Parameter SUB bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ALU' (7#1) [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/DataPath.v:214]
+INFO: [Synth 8-6157] synthesizing module 'ImeGen' [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/DataPath.v:272]
+INFO: [Synth 8-6155] done synthesizing module 'ImeGen' (8#1) [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/DataPath.v:272]
+INFO: [Synth 8-6157] synthesizing module 'shifter' [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/DataPath.v:296]
+INFO: [Synth 8-6155] done synthesizing module 'shifter' (9#1) [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/DataPath.v:296]
+INFO: [Synth 8-6155] done synthesizing module 'DataPath' (10#1) [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/DataPath.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'RV32I' (11#1) [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/RV32I.v:3]
+INFO: [Synth 8-6157] synthesizing module 'Decoder_bus' [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/RV32i_MCU.v:129]
+INFO: [Synth 8-6155] done synthesizing module 'Decoder_bus' (12#1) [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/RV32i_MCU.v:129]
+INFO: [Synth 8-6157] synthesizing module 'mux_bus' [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/RV32i_MCU.v:147]
+INFO: [Synth 8-6155] done synthesizing module 'mux_bus' (13#1) [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/RV32i_MCU.v:147]
+INFO: [Synth 8-6157] synthesizing module 'Ram' [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/Ram.v:4]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/Ram.v:22]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/Ram.v:36]
+INFO: [Synth 8-6155] done synthesizing module 'Ram' (14#1) [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/Ram.v:4]
+WARNING: [Synth 8-689] width (16) of port connection 'addr' does not match port width (8) of module 'Ram' [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/RV32i_MCU.v:54]
+INFO: [Synth 8-6157] synthesizing module 'GPO' [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/GPO.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'GPO' (15#1) [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/GPO.v:3]
+INFO: [Synth 8-6157] synthesizing module 'Fnd_controller_Mem' [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/Fnd_controller_Mem.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Memory' [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/Memory.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'Memory' (16#1) [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/Memory.v:3]
+WARNING: [Synth 8-689] width (1) of port connection 'rData' does not match port width (32) of module 'Memory' [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/Fnd_controller_Mem.v:44]
+INFO: [Synth 8-6157] synthesizing module 'Fnd_controller' [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/스탑워치 파일/FNDCONTROLLER/Fnd_controller.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ClockDevider' [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/스탑워치 파일/FNDCONTROLLER/ClockDevider.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'ClockDevider' (17#1) [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/스탑워치 파일/FNDCONTROLLER/ClockDevider.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Counter' [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/스탑워치 파일/FNDCONTROLLER/Counter.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Counter' (18#1) [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/스탑워치 파일/FNDCONTROLLER/Counter.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Decoder2x4' [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/스탑워치 파일/FNDCONTROLLER/Decoder2x4.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Decoder2x4' (19#1) [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/스탑워치 파일/FNDCONTROLLER/Decoder2x4.v:23]
+INFO: [Synth 8-6157] synthesizing module 'DigitSplitter' [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/스탑워치 파일/FNDCONTROLLER/DigitSplitter.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'DigitSplitter' (20#1) [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/스탑워치 파일/FNDCONTROLLER/DigitSplitter.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Mux4X1' [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/스탑워치 파일/FNDCONTROLLER/Mux4X1.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Mux4X1' (21#1) [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/스탑워치 파일/FNDCONTROLLER/Mux4X1.v:23]
+INFO: [Synth 8-6157] synthesizing module 'BCDtoFND' [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/스탑워치 파일/FNDCONTROLLER/BCDtoFND.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'BCDtoFND' (22#1) [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/스탑워치 파일/FNDCONTROLLER/BCDtoFND.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Fnd_controller' (23#1) [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/스탑워치 파일/FNDCONTROLLER/Fnd_controller.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Fnd_controller_Mem' (24#1) [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/Fnd_controller_Mem.v:23]
+INFO: [Synth 8-6157] synthesizing module 'GPI' [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/GPI.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'GPI' (25#1) [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/GPI.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'RV32i_MCU' (26#1) [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/RV32i_MCU.v:2]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 4541.863 ; gain = 83.754
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 4565.758 ; gain = 107.648
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 4565.758 ; gain = 107.648
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.027 . Memory (MB): peak = 4589.332 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/project/Verilog/MY_Basys-3-Master.xdc]
+Finished Parsing XDC File [D:/project/Verilog/MY_Basys-3-Master.xdc]
+Completed Processing XDC Constraints
+
+refresh_design: Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 4589.332 ; gain = 131.223
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_RV32i' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.sim/sim_1/behav/xsim/code.mem'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_RV32i_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/스탑워치 파일/FNDCONTROLLER/BCDtoFND.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module BCDtoFND
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/스탑워치 파일/FNDCONTROLLER/ClockDevider.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ClockDevider
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/ControlUnit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ControlUnit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/스탑워치 파일/FNDCONTROLLER/Counter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Counter
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/DataPath.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DataPath
+INFO: [VRFC 10-311] analyzing module RegFile
+INFO: [VRFC 10-311] analyzing module Adder
+INFO: [VRFC 10-311] analyzing module register
+INFO: [VRFC 10-311] analyzing module ROM
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-311] analyzing module mux_2x1
+INFO: [VRFC 10-311] analyzing module ImeGen
+INFO: [VRFC 10-311] analyzing module shifter
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/스탑워치 파일/FNDCONTROLLER/Decoder2x4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Decoder2x4
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/스탑워치 파일/FNDCONTROLLER/DigitSplitter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DigitSplitter
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/스탑워치 파일/FNDCONTROLLER/Fnd_controller.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Fnd_controller
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/Fnd_controller_Mem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Fnd_controller_Mem
+INFO: [VRFC 10-2458] undeclared symbol value, assumed default net type wire [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/Fnd_controller_Mem.v:44]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/GPI.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module GPI
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/GPO.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module GPO
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/Memory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Memory
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/스탑워치 파일/FNDCONTROLLER/Mux4X1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Mux4X1
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/RV32I.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RV32I
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/RV32i_MCU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RV32i_MCU
+INFO: [VRFC 10-311] analyzing module Decoder_bus
+INFO: [VRFC 10-311] analyzing module mux_bus
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/Ram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Ram
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sim_1/new/tb_RV32i.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_RV32i
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.sim/sim_1/behav/xsim'
+"xelab -wto 4de3abb15cf745c6a06adaa11032b5ac --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_RV32i_behav xil_defaultlib.tb_RV32i xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 4de3abb15cf745c6a06adaa11032b5ac --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_RV32i_behav xil_defaultlib.tb_RV32i xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 5 differs from formal bit length 7 for port 'ALUControl' [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/RV32I.v:34]
+WARNING: [VRFC 10-3091] actual bit length 5 differs from formal bit length 7 for port 'ALUControl' [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/RV32I.v:53]
+WARNING: [VRFC 10-3091] actual bit length 16 differs from formal bit length 8 for port 'addr' [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/RV32i_MCU.v:54]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 32 for port 'rData' [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/Fnd_controller_Mem.v:44]
+WARNING: [VRFC 10-5021] port 'swA' is not connected on this instance [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sim_1/new/tb_RV32i.v:34]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.ControlUnit
+Compiling module xil_defaultlib.mux_2x1
+Compiling module xil_defaultlib.register
+Compiling module xil_defaultlib.Adder
+Compiling module xil_defaultlib.ROM
+Compiling module xil_defaultlib.RegFile
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.ImeGen
+Compiling module xil_defaultlib.shifter
+Compiling module xil_defaultlib.DataPath
+Compiling module xil_defaultlib.RV32I
+Compiling module xil_defaultlib.Decoder_bus
+Compiling module xil_defaultlib.mux_bus
+Compiling module xil_defaultlib.Ram
+Compiling module xil_defaultlib.GPO
+Compiling module xil_defaultlib.Memory
+Compiling module xil_defaultlib.ClockDevider
+Compiling module xil_defaultlib.Counter
+Compiling module xil_defaultlib.Decoder2x4
+Compiling module xil_defaultlib.DigitSplitter
+Compiling module xil_defaultlib.Mux4X1
+Compiling module xil_defaultlib.BCDtoFND
+Compiling module xil_defaultlib.Fnd_controller
+Compiling module xil_defaultlib.Fnd_controller_Mem
+Compiling module xil_defaultlib.GPI
+Compiling module xil_defaultlib.RV32i_MCU
+Compiling module xil_defaultlib.tb_RV32i
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_RV32i_behav
+ERROR: [Common 17-170] Unknown option '-GPI/RISC_V_RV32i_20231019.sim/sim_1/behav/xsim/xsim.dir/tb_RV32i_behav/webtalk/xsim_webtalk.tcl', please type 'webtalk -help' for usage info.
+
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_RV32i_behav -key {Behavioral:sim_1:Functional:tb_RV32i} -tclbatch {tb_RV32i.tcl} -view {{D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/tb_RV32i_behav1.wcfg}} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+open_wave_config {D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/tb_RV32i_behav1.wcfg}
+source tb_RV32i.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_RV32i_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:12 . Memory (MB): peak = 4611.348 ; gain = 22.016
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_RV32i' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.sim/sim_1/behav/xsim/code.mem'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_RV32i_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.sim/sim_1/behav/xsim'
+"xelab -wto 4de3abb15cf745c6a06adaa11032b5ac --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_RV32i_behav xil_defaultlib.tb_RV32i xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 4de3abb15cf745c6a06adaa11032b5ac --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_RV32i_behav xil_defaultlib.tb_RV32i xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 5 differs from formal bit length 7 for port 'ALUControl' [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/RV32I.v:34]
+WARNING: [VRFC 10-3091] actual bit length 5 differs from formal bit length 7 for port 'ALUControl' [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/RV32I.v:53]
+WARNING: [VRFC 10-3091] actual bit length 16 differs from formal bit length 8 for port 'addr' [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/RV32i_MCU.v:54]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 32 for port 'rData' [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/Fnd_controller_Mem.v:44]
+WARNING: [VRFC 10-5021] port 'swA' is not connected on this instance [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sim_1/new/tb_RV32i.v:34]
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 4617.590 ; gain = 0.000
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_RV32i' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.sim/sim_1/behav/xsim/code.mem'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_RV32i_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.sim/sim_1/behav/xsim'
+"xelab -wto 4de3abb15cf745c6a06adaa11032b5ac --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_RV32i_behav xil_defaultlib.tb_RV32i xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 4de3abb15cf745c6a06adaa11032b5ac --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_RV32i_behav xil_defaultlib.tb_RV32i xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 5 differs from formal bit length 7 for port 'ALUControl' [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/RV32I.v:34]
+WARNING: [VRFC 10-3091] actual bit length 5 differs from formal bit length 7 for port 'ALUControl' [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/RV32I.v:53]
+WARNING: [VRFC 10-3091] actual bit length 16 differs from formal bit length 8 for port 'addr' [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/RV32i_MCU.v:54]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 32 for port 'rData' [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/Fnd_controller_Mem.v:44]
+WARNING: [VRFC 10-5021] port 'swA' is not connected on this instance [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sim_1/new/tb_RV32i.v:34]
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_RV32i' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.sim/sim_1/behav/xsim/code.mem'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_RV32i_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/스탑워치 파일/FNDCONTROLLER/BCDtoFND.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module BCDtoFND
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/스탑워치 파일/FNDCONTROLLER/ClockDevider.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ClockDevider
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/ControlUnit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ControlUnit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/스탑워치 파일/FNDCONTROLLER/Counter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Counter
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/DataPath.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DataPath
+INFO: [VRFC 10-311] analyzing module RegFile
+INFO: [VRFC 10-311] analyzing module Adder
+INFO: [VRFC 10-311] analyzing module register
+INFO: [VRFC 10-311] analyzing module ROM
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-311] analyzing module mux_2x1
+INFO: [VRFC 10-311] analyzing module ImeGen
+INFO: [VRFC 10-311] analyzing module shifter
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/스탑워치 파일/FNDCONTROLLER/Decoder2x4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Decoder2x4
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/스탑워치 파일/FNDCONTROLLER/DigitSplitter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DigitSplitter
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/스탑워치 파일/FNDCONTROLLER/Fnd_controller.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Fnd_controller
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/Fnd_controller_Mem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Fnd_controller_Mem
+INFO: [VRFC 10-2458] undeclared symbol value, assumed default net type wire [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/Fnd_controller_Mem.v:44]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/GPI.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module GPI
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/GPO.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module GPO
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/Memory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Memory
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/스탑워치 파일/FNDCONTROLLER/Mux4X1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Mux4X1
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/RV32I.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RV32I
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/RV32i_MCU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RV32i_MCU
+INFO: [VRFC 10-311] analyzing module Decoder_bus
+INFO: [VRFC 10-311] analyzing module mux_bus
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/Ram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Ram
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sim_1/new/tb_RV32i.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_RV32i
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.sim/sim_1/behav/xsim'
+"xelab -wto 4de3abb15cf745c6a06adaa11032b5ac --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_RV32i_behav xil_defaultlib.tb_RV32i xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 4de3abb15cf745c6a06adaa11032b5ac --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_RV32i_behav xil_defaultlib.tb_RV32i xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 5 differs from formal bit length 7 for port 'ALUControl' [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/RV32I.v:34]
+WARNING: [VRFC 10-3091] actual bit length 5 differs from formal bit length 7 for port 'ALUControl' [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/RV32I.v:53]
+WARNING: [VRFC 10-3091] actual bit length 16 differs from formal bit length 8 for port 'addr' [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/RV32i_MCU.v:54]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 32 for port 'rData' [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/Fnd_controller_Mem.v:44]
+WARNING: [VRFC 10-5021] port 'swA' is not connected on this instance [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sim_1/new/tb_RV32i.v:34]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.ControlUnit
+Compiling module xil_defaultlib.mux_2x1
+Compiling module xil_defaultlib.register
+Compiling module xil_defaultlib.Adder
+Compiling module xil_defaultlib.ROM
+Compiling module xil_defaultlib.RegFile
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.ImeGen
+Compiling module xil_defaultlib.shifter
+Compiling module xil_defaultlib.DataPath
+Compiling module xil_defaultlib.RV32I
+Compiling module xil_defaultlib.Decoder_bus
+Compiling module xil_defaultlib.mux_bus
+Compiling module xil_defaultlib.Ram
+Compiling module xil_defaultlib.GPO
+Compiling module xil_defaultlib.Memory
+Compiling module xil_defaultlib.ClockDevider
+Compiling module xil_defaultlib.Counter
+Compiling module xil_defaultlib.Decoder2x4
+Compiling module xil_defaultlib.DigitSplitter
+Compiling module xil_defaultlib.Mux4X1
+Compiling module xil_defaultlib.BCDtoFND
+Compiling module xil_defaultlib.Fnd_controller
+Compiling module xil_defaultlib.Fnd_controller_Mem
+Compiling module xil_defaultlib.GPI
+Compiling module xil_defaultlib.RV32i_MCU
+Compiling module xil_defaultlib.tb_RV32i
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_RV32i_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 4620.086 ; gain = 0.492
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_RV32i' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.sim/sim_1/behav/xsim/code.mem'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_RV32i_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.sim/sim_1/behav/xsim'
+"xelab -wto 4de3abb15cf745c6a06adaa11032b5ac --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_RV32i_behav xil_defaultlib.tb_RV32i xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 4de3abb15cf745c6a06adaa11032b5ac --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_RV32i_behav xil_defaultlib.tb_RV32i xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 5 differs from formal bit length 7 for port 'ALUControl' [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/RV32I.v:34]
+WARNING: [VRFC 10-3091] actual bit length 5 differs from formal bit length 7 for port 'ALUControl' [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/RV32I.v:53]
+WARNING: [VRFC 10-3091] actual bit length 16 differs from formal bit length 8 for port 'addr' [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/RV32i_MCU.v:54]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 32 for port 'rData' [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/Fnd_controller_Mem.v:44]
+WARNING: [VRFC 10-5021] port 'swA' is not connected on this instance [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sim_1/new/tb_RV32i.v:34]
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_RV32i' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.sim/sim_1/behav/xsim/code.mem'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_RV32i_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.sim/sim_1/behav/xsim'
+"xelab -wto 4de3abb15cf745c6a06adaa11032b5ac --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_RV32i_behav xil_defaultlib.tb_RV32i xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 4de3abb15cf745c6a06adaa11032b5ac --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_RV32i_behav xil_defaultlib.tb_RV32i xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 5 differs from formal bit length 7 for port 'ALUControl' [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/RV32I.v:34]
+WARNING: [VRFC 10-3091] actual bit length 5 differs from formal bit length 7 for port 'ALUControl' [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/RV32I.v:53]
+WARNING: [VRFC 10-3091] actual bit length 16 differs from formal bit length 8 for port 'addr' [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/RV32i_MCU.v:54]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 32 for port 'rData' [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/Fnd_controller_Mem.v:44]
+WARNING: [VRFC 10-5021] port 'swA' is not connected on this instance [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sim_1/new/tb_RV32i.v:34]
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_RV32i' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.sim/sim_1/behav/xsim/code.mem'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_RV32i_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.sim/sim_1/behav/xsim'
+"xelab -wto 4de3abb15cf745c6a06adaa11032b5ac --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_RV32i_behav xil_defaultlib.tb_RV32i xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 4de3abb15cf745c6a06adaa11032b5ac --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_RV32i_behav xil_defaultlib.tb_RV32i xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 5 differs from formal bit length 7 for port 'ALUControl' [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/RV32I.v:34]
+WARNING: [VRFC 10-3091] actual bit length 5 differs from formal bit length 7 for port 'ALUControl' [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/RV32I.v:53]
+WARNING: [VRFC 10-3091] actual bit length 16 differs from formal bit length 8 for port 'addr' [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/RV32i_MCU.v:54]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 32 for port 'rData' [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/Fnd_controller_Mem.v:44]
+WARNING: [VRFC 10-5021] port 'swA' is not connected on this instance [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sim_1/new/tb_RV32i.v:34]
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_RV32i' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.sim/sim_1/behav/xsim/code.mem'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_RV32i_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.sim/sim_1/behav/xsim'
+"xelab -wto 4de3abb15cf745c6a06adaa11032b5ac --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_RV32i_behav xil_defaultlib.tb_RV32i xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 4de3abb15cf745c6a06adaa11032b5ac --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_RV32i_behav xil_defaultlib.tb_RV32i xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 5 differs from formal bit length 7 for port 'ALUControl' [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/RV32I.v:34]
+WARNING: [VRFC 10-3091] actual bit length 5 differs from formal bit length 7 for port 'ALUControl' [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/RV32I.v:53]
+WARNING: [VRFC 10-3091] actual bit length 16 differs from formal bit length 8 for port 'addr' [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/RV32i_MCU.v:54]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 32 for port 'rData' [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/Fnd_controller_Mem.v:44]
+WARNING: [VRFC 10-5021] port 'swA' is not connected on this instance [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sim_1/new/tb_RV32i.v:34]
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_RV32i' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.sim/sim_1/behav/xsim/code.mem'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_RV32i_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.sim/sim_1/behav/xsim'
+"xelab -wto 4de3abb15cf745c6a06adaa11032b5ac --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_RV32i_behav xil_defaultlib.tb_RV32i xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 4de3abb15cf745c6a06adaa11032b5ac --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_RV32i_behav xil_defaultlib.tb_RV32i xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 5 differs from formal bit length 7 for port 'ALUControl' [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/RV32I.v:34]
+WARNING: [VRFC 10-3091] actual bit length 5 differs from formal bit length 7 for port 'ALUControl' [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/RV32I.v:53]
+WARNING: [VRFC 10-3091] actual bit length 16 differs from formal bit length 8 for port 'addr' [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/RV32i_MCU.v:54]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 32 for port 'rData' [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/Fnd_controller_Mem.v:44]
+WARNING: [VRFC 10-5021] port 'swA' is not connected on this instance [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sim_1/new/tb_RV32i.v:34]
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_RV32i' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.sim/sim_1/behav/xsim/code.mem'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_RV32i_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.sim/sim_1/behav/xsim'
+"xelab -wto 4de3abb15cf745c6a06adaa11032b5ac --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_RV32i_behav xil_defaultlib.tb_RV32i xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 4de3abb15cf745c6a06adaa11032b5ac --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_RV32i_behav xil_defaultlib.tb_RV32i xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 5 differs from formal bit length 7 for port 'ALUControl' [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/RV32I.v:34]
+WARNING: [VRFC 10-3091] actual bit length 5 differs from formal bit length 7 for port 'ALUControl' [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/RV32I.v:53]
+WARNING: [VRFC 10-3091] actual bit length 16 differs from formal bit length 8 for port 'addr' [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/RV32i_MCU.v:54]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 32 for port 'rData' [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/Fnd_controller_Mem.v:44]
+WARNING: [VRFC 10-5021] port 'swA' is not connected on this instance [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sim_1/new/tb_RV32i.v:34]
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_RV32i' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.sim/sim_1/behav/xsim/code.mem'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_RV32i_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.sim/sim_1/behav/xsim'
+"xelab -wto 4de3abb15cf745c6a06adaa11032b5ac --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_RV32i_behav xil_defaultlib.tb_RV32i xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 4de3abb15cf745c6a06adaa11032b5ac --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_RV32i_behav xil_defaultlib.tb_RV32i xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 5 differs from formal bit length 7 for port 'ALUControl' [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/RV32I.v:34]
+WARNING: [VRFC 10-3091] actual bit length 5 differs from formal bit length 7 for port 'ALUControl' [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/RV32I.v:53]
+WARNING: [VRFC 10-3091] actual bit length 16 differs from formal bit length 8 for port 'addr' [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/RV32i_MCU.v:54]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 32 for port 'rData' [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/Fnd_controller_Mem.v:44]
+WARNING: [VRFC 10-5021] port 'swA' is not connected on this instance [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sim_1/new/tb_RV32i.v:34]
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_RV32i' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.sim/sim_1/behav/xsim/code.mem'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_RV32i_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.sim/sim_1/behav/xsim'
+"xelab -wto 4de3abb15cf745c6a06adaa11032b5ac --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_RV32i_behav xil_defaultlib.tb_RV32i xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 4de3abb15cf745c6a06adaa11032b5ac --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_RV32i_behav xil_defaultlib.tb_RV32i xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 5 differs from formal bit length 7 for port 'ALUControl' [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/RV32I.v:34]
+WARNING: [VRFC 10-3091] actual bit length 5 differs from formal bit length 7 for port 'ALUControl' [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/RV32I.v:53]
+WARNING: [VRFC 10-3091] actual bit length 16 differs from formal bit length 8 for port 'addr' [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/RV32i_MCU.v:54]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 32 for port 'rData' [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/Fnd_controller_Mem.v:44]
+WARNING: [VRFC 10-5021] port 'swA' is not connected on this instance [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sim_1/new/tb_RV32i.v:34]
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 4621.230 ; gain = 0.000
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_RV32i' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.sim/sim_1/behav/xsim/code.mem'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_RV32i_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.sim/sim_1/behav/xsim'
+"xelab -wto 4de3abb15cf745c6a06adaa11032b5ac --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_RV32i_behav xil_defaultlib.tb_RV32i xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 4de3abb15cf745c6a06adaa11032b5ac --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_RV32i_behav xil_defaultlib.tb_RV32i xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 5 differs from formal bit length 7 for port 'ALUControl' [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/RV32I.v:34]
+WARNING: [VRFC 10-3091] actual bit length 5 differs from formal bit length 7 for port 'ALUControl' [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/RV32I.v:53]
+WARNING: [VRFC 10-3091] actual bit length 16 differs from formal bit length 8 for port 'addr' [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/RV32i_MCU.v:54]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 32 for port 'rData' [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/Fnd_controller_Mem.v:44]
+WARNING: [VRFC 10-5021] port 'swA' is not connected on this instance [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sim_1/new/tb_RV32i.v:34]
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_RV32i' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.sim/sim_1/behav/xsim/code.mem'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_RV32i_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/스탑워치 파일/FNDCONTROLLER/BCDtoFND.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module BCDtoFND
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/스탑워치 파일/FNDCONTROLLER/ClockDevider.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ClockDevider
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/ControlUnit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ControlUnit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/스탑워치 파일/FNDCONTROLLER/Counter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Counter
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/DataPath.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DataPath
+INFO: [VRFC 10-311] analyzing module RegFile
+INFO: [VRFC 10-311] analyzing module Adder
+INFO: [VRFC 10-311] analyzing module register
+INFO: [VRFC 10-311] analyzing module ROM
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-311] analyzing module mux_2x1
+INFO: [VRFC 10-311] analyzing module ImeGen
+INFO: [VRFC 10-311] analyzing module shifter
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/스탑워치 파일/FNDCONTROLLER/Decoder2x4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Decoder2x4
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/스탑워치 파일/FNDCONTROLLER/DigitSplitter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DigitSplitter
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/스탑워치 파일/FNDCONTROLLER/Fnd_controller.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Fnd_controller
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/Fnd_controller_Mem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Fnd_controller_Mem
+INFO: [VRFC 10-2458] undeclared symbol value, assumed default net type wire [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/Fnd_controller_Mem.v:44]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/GPI.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module GPI
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/GPO.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module GPO
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/Memory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Memory
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/스탑워치 파일/FNDCONTROLLER/Mux4X1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Mux4X1
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/RV32I.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RV32I
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/RV32i_MCU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RV32i_MCU
+INFO: [VRFC 10-311] analyzing module Decoder_bus
+INFO: [VRFC 10-311] analyzing module mux_bus
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/Ram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Ram
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sim_1/new/tb_RV32i.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_RV32i
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.sim/sim_1/behav/xsim'
+"xelab -wto 4de3abb15cf745c6a06adaa11032b5ac --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_RV32i_behav xil_defaultlib.tb_RV32i xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 4de3abb15cf745c6a06adaa11032b5ac --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_RV32i_behav xil_defaultlib.tb_RV32i xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 5 differs from formal bit length 7 for port 'ALUControl' [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/RV32I.v:34]
+WARNING: [VRFC 10-3091] actual bit length 5 differs from formal bit length 7 for port 'ALUControl' [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/RV32I.v:53]
+WARNING: [VRFC 10-3091] actual bit length 16 differs from formal bit length 8 for port 'addr' [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/RV32i_MCU.v:54]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 32 for port 'rData' [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/Fnd_controller_Mem.v:44]
+WARNING: [VRFC 10-5021] port 'swA' is not connected on this instance [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sim_1/new/tb_RV32i.v:34]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.ControlUnit
+Compiling module xil_defaultlib.mux_2x1
+Compiling module xil_defaultlib.register
+Compiling module xil_defaultlib.Adder
+Compiling module xil_defaultlib.ROM
+Compiling module xil_defaultlib.RegFile
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.ImeGen
+Compiling module xil_defaultlib.shifter
+Compiling module xil_defaultlib.DataPath
+Compiling module xil_defaultlib.RV32I
+Compiling module xil_defaultlib.Decoder_bus
+Compiling module xil_defaultlib.mux_bus
+Compiling module xil_defaultlib.Ram
+Compiling module xil_defaultlib.GPO
+Compiling module xil_defaultlib.Memory
+Compiling module xil_defaultlib.ClockDevider
+Compiling module xil_defaultlib.Counter
+Compiling module xil_defaultlib.Decoder2x4
+Compiling module xil_defaultlib.DigitSplitter
+Compiling module xil_defaultlib.Mux4X1
+Compiling module xil_defaultlib.BCDtoFND
+Compiling module xil_defaultlib.Fnd_controller
+Compiling module xil_defaultlib.Fnd_controller_Mem
+Compiling module xil_defaultlib.GPI
+Compiling module xil_defaultlib.RV32i_MCU
+Compiling module xil_defaultlib.tb_RV32i
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_RV32i_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 4622.105 ; gain = 0.000
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_RV32i' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.sim/sim_1/behav/xsim/code.mem'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_RV32i_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.sim/sim_1/behav/xsim'
+"xelab -wto 4de3abb15cf745c6a06adaa11032b5ac --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_RV32i_behav xil_defaultlib.tb_RV32i xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 4de3abb15cf745c6a06adaa11032b5ac --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_RV32i_behav xil_defaultlib.tb_RV32i xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 5 differs from formal bit length 7 for port 'ALUControl' [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/RV32I.v:34]
+WARNING: [VRFC 10-3091] actual bit length 5 differs from formal bit length 7 for port 'ALUControl' [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/RV32I.v:53]
+WARNING: [VRFC 10-3091] actual bit length 16 differs from formal bit length 8 for port 'addr' [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/RV32i_MCU.v:54]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 32 for port 'rData' [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/Fnd_controller_Mem.v:44]
+WARNING: [VRFC 10-5021] port 'swA' is not connected on this instance [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sim_1/new/tb_RV32i.v:34]
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_RV32i' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.sim/sim_1/behav/xsim/code.mem'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_RV32i_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.sim/sim_1/behav/xsim'
+"xelab -wto 4de3abb15cf745c6a06adaa11032b5ac --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_RV32i_behav xil_defaultlib.tb_RV32i xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 4de3abb15cf745c6a06adaa11032b5ac --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_RV32i_behav xil_defaultlib.tb_RV32i xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 5 differs from formal bit length 7 for port 'ALUControl' [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/RV32I.v:34]
+WARNING: [VRFC 10-3091] actual bit length 5 differs from formal bit length 7 for port 'ALUControl' [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/RV32I.v:53]
+WARNING: [VRFC 10-3091] actual bit length 16 differs from formal bit length 8 for port 'addr' [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/RV32i_MCU.v:54]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 32 for port 'rData' [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/Fnd_controller_Mem.v:44]
+WARNING: [VRFC 10-5021] port 'swA' is not connected on this instance [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sim_1/new/tb_RV32i.v:34]
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_RV32i' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.sim/sim_1/behav/xsim/code.mem'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_RV32i_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.sim/sim_1/behav/xsim'
+"xelab -wto 4de3abb15cf745c6a06adaa11032b5ac --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_RV32i_behav xil_defaultlib.tb_RV32i xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 4de3abb15cf745c6a06adaa11032b5ac --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_RV32i_behav xil_defaultlib.tb_RV32i xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 5 differs from formal bit length 7 for port 'ALUControl' [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/RV32I.v:34]
+WARNING: [VRFC 10-3091] actual bit length 5 differs from formal bit length 7 for port 'ALUControl' [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/RV32I.v:53]
+WARNING: [VRFC 10-3091] actual bit length 16 differs from formal bit length 8 for port 'addr' [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/RV32i_MCU.v:54]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 32 for port 'rData' [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/Fnd_controller_Mem.v:44]
+WARNING: [VRFC 10-5021] port 'swA' is not connected on this instance [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sim_1/new/tb_RV32i.v:34]
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_RV32i' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.sim/sim_1/behav/xsim/code.mem'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_RV32i_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.sim/sim_1/behav/xsim'
+"xelab -wto 4de3abb15cf745c6a06adaa11032b5ac --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_RV32i_behav xil_defaultlib.tb_RV32i xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 4de3abb15cf745c6a06adaa11032b5ac --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_RV32i_behav xil_defaultlib.tb_RV32i xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 5 differs from formal bit length 7 for port 'ALUControl' [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/RV32I.v:34]
+WARNING: [VRFC 10-3091] actual bit length 5 differs from formal bit length 7 for port 'ALUControl' [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/RV32I.v:53]
+WARNING: [VRFC 10-3091] actual bit length 16 differs from formal bit length 8 for port 'addr' [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/RV32i_MCU.v:54]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 32 for port 'rData' [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/Fnd_controller_Mem.v:44]
+WARNING: [VRFC 10-5021] port 'swA' is not connected on this instance [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sim_1/new/tb_RV32i.v:34]
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_RV32i' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.sim/sim_1/behav/xsim/code.mem'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_RV32i_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.sim/sim_1/behav/xsim'
+"xelab -wto 4de3abb15cf745c6a06adaa11032b5ac --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_RV32i_behav xil_defaultlib.tb_RV32i xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 4de3abb15cf745c6a06adaa11032b5ac --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_RV32i_behav xil_defaultlib.tb_RV32i xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 5 differs from formal bit length 7 for port 'ALUControl' [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/RV32I.v:34]
+WARNING: [VRFC 10-3091] actual bit length 5 differs from formal bit length 7 for port 'ALUControl' [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/RV32I.v:53]
+WARNING: [VRFC 10-3091] actual bit length 16 differs from formal bit length 8 for port 'addr' [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/RV32i_MCU.v:54]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 32 for port 'rData' [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/Fnd_controller_Mem.v:44]
+WARNING: [VRFC 10-5021] port 'swA' is not connected on this instance [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sim_1/new/tb_RV32i.v:34]
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_RV32i' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.sim/sim_1/behav/xsim/code.mem'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_RV32i_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/스탑워치 파일/FNDCONTROLLER/BCDtoFND.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module BCDtoFND
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/스탑워치 파일/FNDCONTROLLER/ClockDevider.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ClockDevider
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/ControlUnit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ControlUnit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/스탑워치 파일/FNDCONTROLLER/Counter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Counter
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/DataPath.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DataPath
+INFO: [VRFC 10-311] analyzing module RegFile
+INFO: [VRFC 10-311] analyzing module Adder
+INFO: [VRFC 10-311] analyzing module register
+INFO: [VRFC 10-311] analyzing module ROM
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-311] analyzing module mux_2x1
+INFO: [VRFC 10-311] analyzing module ImeGen
+INFO: [VRFC 10-311] analyzing module shifter
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/스탑워치 파일/FNDCONTROLLER/Decoder2x4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Decoder2x4
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/스탑워치 파일/FNDCONTROLLER/DigitSplitter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DigitSplitter
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/스탑워치 파일/FNDCONTROLLER/Fnd_controller.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Fnd_controller
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/Fnd_controller_Mem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Fnd_controller_Mem
+INFO: [VRFC 10-2458] undeclared symbol value, assumed default net type wire [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/Fnd_controller_Mem.v:44]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/GPI.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module GPI
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/GPO.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module GPO
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/Memory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Memory
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/스탑워치 파일/FNDCONTROLLER/Mux4X1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Mux4X1
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/RV32I.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RV32I
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/RV32i_MCU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RV32i_MCU
+INFO: [VRFC 10-311] analyzing module Decoder_bus
+INFO: [VRFC 10-311] analyzing module mux_bus
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/Ram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Ram
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sim_1/new/tb_RV32i.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_RV32i
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.sim/sim_1/behav/xsim'
+"xelab -wto 4de3abb15cf745c6a06adaa11032b5ac --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_RV32i_behav xil_defaultlib.tb_RV32i xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 4de3abb15cf745c6a06adaa11032b5ac --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_RV32i_behav xil_defaultlib.tb_RV32i xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 5 differs from formal bit length 7 for port 'ALUControl' [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/RV32I.v:34]
+WARNING: [VRFC 10-3091] actual bit length 5 differs from formal bit length 7 for port 'ALUControl' [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/RV32I.v:53]
+WARNING: [VRFC 10-3091] actual bit length 16 differs from formal bit length 8 for port 'addr' [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/RV32i_MCU.v:54]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 32 for port 'rData' [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/Fnd_controller_Mem.v:44]
+WARNING: [VRFC 10-5021] port 'swA' is not connected on this instance [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sim_1/new/tb_RV32i.v:34]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.ControlUnit
+Compiling module xil_defaultlib.mux_2x1
+Compiling module xil_defaultlib.register
+Compiling module xil_defaultlib.Adder
+Compiling module xil_defaultlib.ROM
+Compiling module xil_defaultlib.RegFile
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.ImeGen
+Compiling module xil_defaultlib.shifter
+Compiling module xil_defaultlib.DataPath
+Compiling module xil_defaultlib.RV32I
+Compiling module xil_defaultlib.Decoder_bus
+Compiling module xil_defaultlib.mux_bus
+Compiling module xil_defaultlib.Ram
+Compiling module xil_defaultlib.GPO
+Compiling module xil_defaultlib.Memory
+Compiling module xil_defaultlib.ClockDevider
+Compiling module xil_defaultlib.Counter
+Compiling module xil_defaultlib.Decoder2x4
+Compiling module xil_defaultlib.DigitSplitter
+Compiling module xil_defaultlib.Mux4X1
+Compiling module xil_defaultlib.BCDtoFND
+Compiling module xil_defaultlib.Fnd_controller
+Compiling module xil_defaultlib.Fnd_controller_Mem
+Compiling module xil_defaultlib.GPI
+Compiling module xil_defaultlib.RV32i_MCU
+Compiling module xil_defaultlib.tb_RV32i
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_RV32i_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_RV32i' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.sim/sim_1/behav/xsim/code.mem'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_RV32i_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/스탑워치 파일/FNDCONTROLLER/BCDtoFND.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module BCDtoFND
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/스탑워치 파일/FNDCONTROLLER/ClockDevider.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ClockDevider
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/ControlUnit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ControlUnit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/스탑워치 파일/FNDCONTROLLER/Counter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Counter
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/DataPath.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DataPath
+INFO: [VRFC 10-311] analyzing module RegFile
+INFO: [VRFC 10-311] analyzing module Adder
+INFO: [VRFC 10-311] analyzing module register
+INFO: [VRFC 10-311] analyzing module ROM
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-311] analyzing module mux_2x1
+INFO: [VRFC 10-311] analyzing module ImeGen
+INFO: [VRFC 10-311] analyzing module shifter
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/스탑워치 파일/FNDCONTROLLER/Decoder2x4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Decoder2x4
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/스탑워치 파일/FNDCONTROLLER/DigitSplitter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DigitSplitter
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/스탑워치 파일/FNDCONTROLLER/Fnd_controller.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Fnd_controller
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/Fnd_controller_Mem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Fnd_controller_Mem
+INFO: [VRFC 10-2458] undeclared symbol value, assumed default net type wire [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/Fnd_controller_Mem.v:44]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/GPI.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module GPI
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/GPO.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module GPO
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/Memory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Memory
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/스탑워치 파일/FNDCONTROLLER/Mux4X1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Mux4X1
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/RV32I.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RV32I
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/RV32i_MCU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RV32i_MCU
+INFO: [VRFC 10-311] analyzing module Decoder_bus
+INFO: [VRFC 10-311] analyzing module mux_bus
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/Ram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Ram
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sim_1/new/tb_RV32i.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_RV32i
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.sim/sim_1/behav/xsim'
+"xelab -wto 4de3abb15cf745c6a06adaa11032b5ac --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_RV32i_behav xil_defaultlib.tb_RV32i xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 4de3abb15cf745c6a06adaa11032b5ac --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_RV32i_behav xil_defaultlib.tb_RV32i xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 5 differs from formal bit length 7 for port 'ALUControl' [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/RV32I.v:34]
+WARNING: [VRFC 10-3091] actual bit length 5 differs from formal bit length 7 for port 'ALUControl' [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/RV32I.v:53]
+WARNING: [VRFC 10-3091] actual bit length 16 differs from formal bit length 8 for port 'addr' [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/RV32i_MCU.v:54]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 32 for port 'rData' [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/Fnd_controller_Mem.v:44]
+WARNING: [VRFC 10-5021] port 'swA' is not connected on this instance [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sim_1/new/tb_RV32i.v:34]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.ControlUnit
+Compiling module xil_defaultlib.mux_2x1
+Compiling module xil_defaultlib.register
+Compiling module xil_defaultlib.Adder
+Compiling module xil_defaultlib.ROM
+Compiling module xil_defaultlib.RegFile
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.ImeGen
+Compiling module xil_defaultlib.shifter
+Compiling module xil_defaultlib.DataPath
+Compiling module xil_defaultlib.RV32I
+Compiling module xil_defaultlib.Decoder_bus
+Compiling module xil_defaultlib.mux_bus
+Compiling module xil_defaultlib.Ram
+Compiling module xil_defaultlib.GPO
+Compiling module xil_defaultlib.Memory
+Compiling module xil_defaultlib.ClockDevider
+Compiling module xil_defaultlib.Counter
+Compiling module xil_defaultlib.Decoder2x4
+Compiling module xil_defaultlib.DigitSplitter
+Compiling module xil_defaultlib.Mux4X1
+Compiling module xil_defaultlib.BCDtoFND
+Compiling module xil_defaultlib.Fnd_controller
+Compiling module xil_defaultlib.Fnd_controller_Mem
+Compiling module xil_defaultlib.GPI
+Compiling module xil_defaultlib.RV32i_MCU
+Compiling module xil_defaultlib.tb_RV32i
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_RV32i_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_RV32i' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.sim/sim_1/behav/xsim/code.mem'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_RV32i_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/스탑워치 파일/FNDCONTROLLER/BCDtoFND.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module BCDtoFND
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/스탑워치 파일/FNDCONTROLLER/ClockDevider.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ClockDevider
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/ControlUnit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ControlUnit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/스탑워치 파일/FNDCONTROLLER/Counter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Counter
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/DataPath.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DataPath
+INFO: [VRFC 10-311] analyzing module RegFile
+INFO: [VRFC 10-311] analyzing module Adder
+INFO: [VRFC 10-311] analyzing module register
+INFO: [VRFC 10-311] analyzing module ROM
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-311] analyzing module mux_2x1
+INFO: [VRFC 10-311] analyzing module ImeGen
+INFO: [VRFC 10-311] analyzing module shifter
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/스탑워치 파일/FNDCONTROLLER/Decoder2x4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Decoder2x4
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/스탑워치 파일/FNDCONTROLLER/DigitSplitter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DigitSplitter
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/스탑워치 파일/FNDCONTROLLER/Fnd_controller.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Fnd_controller
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/Fnd_controller_Mem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Fnd_controller_Mem
+INFO: [VRFC 10-2458] undeclared symbol value, assumed default net type wire [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/Fnd_controller_Mem.v:44]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/GPI.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module GPI
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/GPO.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module GPO
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/Memory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Memory
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/스탑워치 파일/FNDCONTROLLER/Mux4X1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Mux4X1
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/RV32I.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RV32I
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/RV32i_MCU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RV32i_MCU
+INFO: [VRFC 10-311] analyzing module Decoder_bus
+INFO: [VRFC 10-311] analyzing module mux_bus
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/Ram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Ram
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sim_1/new/tb_RV32i.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_RV32i
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.sim/sim_1/behav/xsim'
+"xelab -wto 4de3abb15cf745c6a06adaa11032b5ac --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_RV32i_behav xil_defaultlib.tb_RV32i xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 4de3abb15cf745c6a06adaa11032b5ac --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_RV32i_behav xil_defaultlib.tb_RV32i xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 5 differs from formal bit length 7 for port 'ALUControl' [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/RV32I.v:34]
+WARNING: [VRFC 10-3091] actual bit length 5 differs from formal bit length 7 for port 'ALUControl' [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/RV32I.v:53]
+WARNING: [VRFC 10-3091] actual bit length 16 differs from formal bit length 8 for port 'addr' [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/RV32i_MCU.v:54]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 32 for port 'rData' [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/Fnd_controller_Mem.v:44]
+WARNING: [VRFC 10-5021] port 'swA' is not connected on this instance [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sim_1/new/tb_RV32i.v:34]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.ControlUnit
+Compiling module xil_defaultlib.mux_2x1
+Compiling module xil_defaultlib.register
+Compiling module xil_defaultlib.Adder
+Compiling module xil_defaultlib.ROM
+Compiling module xil_defaultlib.RegFile
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.ImeGen
+Compiling module xil_defaultlib.shifter
+Compiling module xil_defaultlib.DataPath
+Compiling module xil_defaultlib.RV32I
+Compiling module xil_defaultlib.Decoder_bus
+Compiling module xil_defaultlib.mux_bus
+Compiling module xil_defaultlib.Ram
+Compiling module xil_defaultlib.GPO
+Compiling module xil_defaultlib.Memory
+Compiling module xil_defaultlib.ClockDevider
+Compiling module xil_defaultlib.Counter
+Compiling module xil_defaultlib.Decoder2x4
+Compiling module xil_defaultlib.DigitSplitter
+Compiling module xil_defaultlib.Mux4X1
+Compiling module xil_defaultlib.BCDtoFND
+Compiling module xil_defaultlib.Fnd_controller
+Compiling module xil_defaultlib.Fnd_controller_Mem
+Compiling module xil_defaultlib.GPI
+Compiling module xil_defaultlib.RV32i_MCU
+Compiling module xil_defaultlib.tb_RV32i
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_RV32i_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_RV32i' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.sim/sim_1/behav/xsim/code.mem'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_RV32i_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.sim/sim_1/behav/xsim'
+"xelab -wto 4de3abb15cf745c6a06adaa11032b5ac --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_RV32i_behav xil_defaultlib.tb_RV32i xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 4de3abb15cf745c6a06adaa11032b5ac --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_RV32i_behav xil_defaultlib.tb_RV32i xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 5 differs from formal bit length 7 for port 'ALUControl' [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/RV32I.v:34]
+WARNING: [VRFC 10-3091] actual bit length 5 differs from formal bit length 7 for port 'ALUControl' [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/RV32I.v:53]
+WARNING: [VRFC 10-3091] actual bit length 16 differs from formal bit length 8 for port 'addr' [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/RV32i_MCU.v:54]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 32 for port 'rData' [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/Fnd_controller_Mem.v:44]
+WARNING: [VRFC 10-5021] port 'swA' is not connected on this instance [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sim_1/new/tb_RV32i.v:34]
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_RV32i' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.sim/sim_1/behav/xsim/code.mem'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_RV32i_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.sim/sim_1/behav/xsim'
+"xelab -wto 4de3abb15cf745c6a06adaa11032b5ac --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_RV32i_behav xil_defaultlib.tb_RV32i xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 4de3abb15cf745c6a06adaa11032b5ac --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_RV32i_behav xil_defaultlib.tb_RV32i xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 5 differs from formal bit length 7 for port 'ALUControl' [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/RV32I.v:34]
+WARNING: [VRFC 10-3091] actual bit length 5 differs from formal bit length 7 for port 'ALUControl' [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/RV32I.v:53]
+WARNING: [VRFC 10-3091] actual bit length 16 differs from formal bit length 8 for port 'addr' [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/RV32i_MCU.v:54]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 32 for port 'rData' [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/Fnd_controller_Mem.v:44]
+WARNING: [VRFC 10-5021] port 'swA' is not connected on this instance [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sim_1/new/tb_RV32i.v:34]
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_RV32i' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.sim/sim_1/behav/xsim/code.mem'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_RV32i_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/스탑워치 파일/FNDCONTROLLER/BCDtoFND.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module BCDtoFND
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/스탑워치 파일/FNDCONTROLLER/ClockDevider.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ClockDevider
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/ControlUnit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ControlUnit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/스탑워치 파일/FNDCONTROLLER/Counter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Counter
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/DataPath.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DataPath
+INFO: [VRFC 10-311] analyzing module RegFile
+INFO: [VRFC 10-311] analyzing module Adder
+INFO: [VRFC 10-311] analyzing module register
+INFO: [VRFC 10-311] analyzing module ROM
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-311] analyzing module mux_2x1
+INFO: [VRFC 10-311] analyzing module ImeGen
+INFO: [VRFC 10-311] analyzing module shifter
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/스탑워치 파일/FNDCONTROLLER/Decoder2x4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Decoder2x4
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/스탑워치 파일/FNDCONTROLLER/DigitSplitter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DigitSplitter
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/스탑워치 파일/FNDCONTROLLER/Fnd_controller.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Fnd_controller
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/Fnd_controller_Mem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Fnd_controller_Mem
+INFO: [VRFC 10-2458] undeclared symbol value, assumed default net type wire [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/Fnd_controller_Mem.v:44]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/GPI.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module GPI
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/GPO.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module GPO
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/Memory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Memory
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/스탑워치 파일/FNDCONTROLLER/Mux4X1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Mux4X1
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/RV32I.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RV32I
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/RV32i_MCU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RV32i_MCU
+INFO: [VRFC 10-311] analyzing module Decoder_bus
+INFO: [VRFC 10-311] analyzing module mux_bus
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/Ram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Ram
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sim_1/new/tb_RV32i.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_RV32i
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.sim/sim_1/behav/xsim'
+"xelab -wto 4de3abb15cf745c6a06adaa11032b5ac --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_RV32i_behav xil_defaultlib.tb_RV32i xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 4de3abb15cf745c6a06adaa11032b5ac --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_RV32i_behav xil_defaultlib.tb_RV32i xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 5 differs from formal bit length 7 for port 'ALUControl' [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/RV32I.v:34]
+WARNING: [VRFC 10-3091] actual bit length 5 differs from formal bit length 7 for port 'ALUControl' [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/RV32I.v:53]
+WARNING: [VRFC 10-3091] actual bit length 16 differs from formal bit length 8 for port 'addr' [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/RV32i_MCU.v:54]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 32 for port 'rData' [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/Fnd_controller_Mem.v:44]
+WARNING: [VRFC 10-5021] port 'swA' is not connected on this instance [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sim_1/new/tb_RV32i.v:34]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.ControlUnit
+Compiling module xil_defaultlib.mux_2x1
+Compiling module xil_defaultlib.register
+Compiling module xil_defaultlib.Adder
+Compiling module xil_defaultlib.ROM
+Compiling module xil_defaultlib.RegFile
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.ImeGen
+Compiling module xil_defaultlib.shifter
+Compiling module xil_defaultlib.DataPath
+Compiling module xil_defaultlib.RV32I
+Compiling module xil_defaultlib.Decoder_bus
+Compiling module xil_defaultlib.mux_bus
+Compiling module xil_defaultlib.Ram
+Compiling module xil_defaultlib.GPO
+Compiling module xil_defaultlib.Memory
+Compiling module xil_defaultlib.ClockDevider
+Compiling module xil_defaultlib.Counter
+Compiling module xil_defaultlib.Decoder2x4
+Compiling module xil_defaultlib.DigitSplitter
+Compiling module xil_defaultlib.Mux4X1
+Compiling module xil_defaultlib.BCDtoFND
+Compiling module xil_defaultlib.Fnd_controller
+Compiling module xil_defaultlib.Fnd_controller_Mem
+Compiling module xil_defaultlib.GPI
+Compiling module xil_defaultlib.RV32i_MCU
+Compiling module xil_defaultlib.tb_RV32i
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_RV32i_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_RV32i' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.sim/sim_1/behav/xsim/code.mem'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_RV32i_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/스탑워치 파일/FNDCONTROLLER/BCDtoFND.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module BCDtoFND
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/스탑워치 파일/FNDCONTROLLER/ClockDevider.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ClockDevider
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/ControlUnit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ControlUnit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/스탑워치 파일/FNDCONTROLLER/Counter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Counter
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/DataPath.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DataPath
+INFO: [VRFC 10-311] analyzing module RegFile
+INFO: [VRFC 10-311] analyzing module Adder
+INFO: [VRFC 10-311] analyzing module register
+INFO: [VRFC 10-311] analyzing module ROM
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-311] analyzing module mux_2x1
+INFO: [VRFC 10-311] analyzing module ImeGen
+INFO: [VRFC 10-311] analyzing module shifter
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/스탑워치 파일/FNDCONTROLLER/Decoder2x4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Decoder2x4
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/스탑워치 파일/FNDCONTROLLER/DigitSplitter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DigitSplitter
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/스탑워치 파일/FNDCONTROLLER/Fnd_controller.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Fnd_controller
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/Fnd_controller_Mem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Fnd_controller_Mem
+INFO: [VRFC 10-2458] undeclared symbol value, assumed default net type wire [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/Fnd_controller_Mem.v:44]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/GPI.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module GPI
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/GPO.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module GPO
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/Memory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Memory
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/스탑워치 파일/FNDCONTROLLER/Mux4X1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Mux4X1
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/RV32I.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RV32I
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/RV32i_MCU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RV32i_MCU
+INFO: [VRFC 10-311] analyzing module Decoder_bus
+INFO: [VRFC 10-311] analyzing module mux_bus
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/Ram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Ram
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sim_1/new/tb_RV32i.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_RV32i
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.sim/sim_1/behav/xsim'
+"xelab -wto 4de3abb15cf745c6a06adaa11032b5ac --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_RV32i_behav xil_defaultlib.tb_RV32i xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 4de3abb15cf745c6a06adaa11032b5ac --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_RV32i_behav xil_defaultlib.tb_RV32i xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 5 differs from formal bit length 7 for port 'ALUControl' [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/RV32I.v:34]
+WARNING: [VRFC 10-3091] actual bit length 5 differs from formal bit length 7 for port 'ALUControl' [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/RV32I.v:53]
+WARNING: [VRFC 10-3091] actual bit length 16 differs from formal bit length 8 for port 'addr' [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/RV32i_MCU.v:54]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 32 for port 'rData' [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/Fnd_controller_Mem.v:44]
+WARNING: [VRFC 10-5021] port 'swA' is not connected on this instance [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sim_1/new/tb_RV32i.v:34]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.ControlUnit
+Compiling module xil_defaultlib.mux_2x1
+Compiling module xil_defaultlib.register
+Compiling module xil_defaultlib.Adder
+Compiling module xil_defaultlib.ROM
+Compiling module xil_defaultlib.RegFile
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.ImeGen
+Compiling module xil_defaultlib.shifter
+Compiling module xil_defaultlib.DataPath
+Compiling module xil_defaultlib.RV32I
+Compiling module xil_defaultlib.Decoder_bus
+Compiling module xil_defaultlib.mux_bus
+Compiling module xil_defaultlib.Ram
+Compiling module xil_defaultlib.GPO
+Compiling module xil_defaultlib.Memory
+Compiling module xil_defaultlib.ClockDevider
+Compiling module xil_defaultlib.Counter
+Compiling module xil_defaultlib.Decoder2x4
+Compiling module xil_defaultlib.DigitSplitter
+Compiling module xil_defaultlib.Mux4X1
+Compiling module xil_defaultlib.BCDtoFND
+Compiling module xil_defaultlib.Fnd_controller
+Compiling module xil_defaultlib.Fnd_controller_Mem
+Compiling module xil_defaultlib.GPI
+Compiling module xil_defaultlib.RV32i_MCU
+Compiling module xil_defaultlib.tb_RV32i
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_RV32i_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_RV32i' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.sim/sim_1/behav/xsim/code.mem'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_RV32i_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.sim/sim_1/behav/xsim'
+"xelab -wto 4de3abb15cf745c6a06adaa11032b5ac --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_RV32i_behav xil_defaultlib.tb_RV32i xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 4de3abb15cf745c6a06adaa11032b5ac --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_RV32i_behav xil_defaultlib.tb_RV32i xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 5 differs from formal bit length 7 for port 'ALUControl' [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/RV32I.v:34]
+WARNING: [VRFC 10-3091] actual bit length 5 differs from formal bit length 7 for port 'ALUControl' [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/RV32I.v:53]
+WARNING: [VRFC 10-3091] actual bit length 16 differs from formal bit length 8 for port 'addr' [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/RV32i_MCU.v:54]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 32 for port 'rData' [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/Fnd_controller_Mem.v:44]
+WARNING: [VRFC 10-5021] port 'swA' is not connected on this instance [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sim_1/new/tb_RV32i.v:34]
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+run all
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_RV32i' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.sim/sim_1/behav/xsim/code.mem'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_RV32i_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/스탑워치 파일/FNDCONTROLLER/BCDtoFND.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module BCDtoFND
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/스탑워치 파일/FNDCONTROLLER/ClockDevider.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ClockDevider
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/ControlUnit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ControlUnit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/스탑워치 파일/FNDCONTROLLER/Counter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Counter
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/DataPath.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DataPath
+INFO: [VRFC 10-311] analyzing module RegFile
+INFO: [VRFC 10-311] analyzing module Adder
+INFO: [VRFC 10-311] analyzing module register
+INFO: [VRFC 10-311] analyzing module ROM
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-311] analyzing module mux_2x1
+INFO: [VRFC 10-311] analyzing module ImeGen
+INFO: [VRFC 10-311] analyzing module shifter
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/스탑워치 파일/FNDCONTROLLER/Decoder2x4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Decoder2x4
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/스탑워치 파일/FNDCONTROLLER/DigitSplitter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DigitSplitter
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/스탑워치 파일/FNDCONTROLLER/Fnd_controller.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Fnd_controller
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/Fnd_controller_Mem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Fnd_controller_Mem
+INFO: [VRFC 10-2458] undeclared symbol value, assumed default net type wire [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/Fnd_controller_Mem.v:44]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/GPI.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module GPI
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/GPO.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module GPO
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/Memory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Memory
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/스탑워치 파일/FNDCONTROLLER/Mux4X1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Mux4X1
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/RV32I.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RV32I
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/RV32i_MCU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RV32i_MCU
+INFO: [VRFC 10-311] analyzing module Decoder_bus
+INFO: [VRFC 10-311] analyzing module mux_bus
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/Ram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Ram
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sim_1/new/tb_RV32i.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_RV32i
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.sim/sim_1/behav/xsim'
+"xelab -wto 4de3abb15cf745c6a06adaa11032b5ac --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_RV32i_behav xil_defaultlib.tb_RV32i xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 4de3abb15cf745c6a06adaa11032b5ac --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_RV32i_behav xil_defaultlib.tb_RV32i xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 5 differs from formal bit length 7 for port 'ALUControl' [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/RV32I.v:34]
+WARNING: [VRFC 10-3091] actual bit length 5 differs from formal bit length 7 for port 'ALUControl' [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/RV32I.v:53]
+WARNING: [VRFC 10-3091] actual bit length 16 differs from formal bit length 8 for port 'addr' [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/RV32i_MCU.v:54]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 32 for port 'rData' [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sources_1/new/Fnd_controller_Mem.v:44]
+WARNING: [VRFC 10-5021] port 'swA' is not connected on this instance [D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.srcs/sim_1/new/tb_RV32i.v:34]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.ControlUnit
+Compiling module xil_defaultlib.mux_2x1
+Compiling module xil_defaultlib.register
+Compiling module xil_defaultlib.Adder
+Compiling module xil_defaultlib.ROM
+Compiling module xil_defaultlib.RegFile
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.ImeGen
+Compiling module xil_defaultlib.shifter
+Compiling module xil_defaultlib.DataPath
+Compiling module xil_defaultlib.RV32I
+Compiling module xil_defaultlib.Decoder_bus
+Compiling module xil_defaultlib.mux_bus
+Compiling module xil_defaultlib.Ram
+Compiling module xil_defaultlib.GPO
+Compiling module xil_defaultlib.Memory
+Compiling module xil_defaultlib.ClockDevider
+Compiling module xil_defaultlib.Counter
+Compiling module xil_defaultlib.Decoder2x4
+Compiling module xil_defaultlib.DigitSplitter
+Compiling module xil_defaultlib.Mux4X1
+Compiling module xil_defaultlib.BCDtoFND
+Compiling module xil_defaultlib.Fnd_controller
+Compiling module xil_defaultlib.Fnd_controller_Mem
+Compiling module xil_defaultlib.GPI
+Compiling module xil_defaultlib.RV32i_MCU
+Compiling module xil_defaultlib.tb_RV32i
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_RV32i_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 5766.625 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Sat Oct 28 18:55:12 2023...

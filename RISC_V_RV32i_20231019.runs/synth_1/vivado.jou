@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Sat Oct 28 15:34:06 2023
+# Process ID: 6356
+# Current directory: D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.runs/synth_1
+# Command line: vivado.exe -log RV32i_MCU.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source RV32i_MCU.tcl
+# Log file: D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.runs/synth_1/RV32i_MCU.vds
+# Journal file: D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source RV32i_MCU.tcl -notrace

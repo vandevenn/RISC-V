@@ -1,0 +1,16 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Thu Oct 26 17:54:26 2023
+# Process ID: 17960
+# Current directory: D:/project/Verilog/RISC_V_RV32i_20231025 -GPI
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent12596 D:\project\Verilog\RISC_V_RV32i_20231025 -GPI\RISC_V_RV32i_20231019.xpr
+# Log file: D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/vivado.log
+# Journal file: D:/project/Verilog/RISC_V_RV32i_20231025 -GPI\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.xpr}
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files {{D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/Uart/Uart.v}}] -no_script -reset -force -quiet
+remove_files  {{D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/Uart/Uart.v}}

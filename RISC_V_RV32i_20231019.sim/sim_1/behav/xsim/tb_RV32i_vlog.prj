@@ -1,0 +1,25 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../스탑워치 파일/FNDCONTROLLER/BCDtoFND.v" \
+"../../../../스탑워치 파일/FNDCONTROLLER/ClockDevider.v" \
+"../../../../RISC_V_RV32i_20231019.srcs/sources_1/new/ControlUnit.v" \
+"../../../../스탑워치 파일/FNDCONTROLLER/Counter.v" \
+"../../../../RISC_V_RV32i_20231019.srcs/sources_1/new/DataPath.v" \
+"../../../../스탑워치 파일/FNDCONTROLLER/Decoder2x4.v" \
+"../../../../스탑워치 파일/FNDCONTROLLER/DigitSplitter.v" \
+"../../../../스탑워치 파일/FNDCONTROLLER/Fnd_controller.v" \
+"../../../../RISC_V_RV32i_20231019.srcs/sources_1/new/Fnd_controller_Mem.v" \
+"../../../../RISC_V_RV32i_20231019.srcs/sources_1/new/GPI.v" \
+"../../../../RISC_V_RV32i_20231019.srcs/sources_1/new/GPO.v" \
+"../../../../RISC_V_RV32i_20231019.srcs/sources_1/new/Memory.v" \
+"../../../../스탑워치 파일/FNDCONTROLLER/Mux4X1.v" \
+"../../../../RISC_V_RV32i_20231019.srcs/sources_1/new/RV32I.v" \
+"../../../../RISC_V_RV32i_20231019.srcs/sources_1/new/RV32i_MCU.v" \
+"../../../../RISC_V_RV32i_20231019.srcs/sources_1/new/Ram.v" \
+"../../../../RISC_V_RV32i_20231019.srcs/sim_1/new/tb_RV32i.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

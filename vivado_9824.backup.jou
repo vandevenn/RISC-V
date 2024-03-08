@@ -1,0 +1,21 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Thu Oct 26 15:43:54 2023
+# Process ID: 9824
+# Current directory: D:/project/Verilog/RISC_V_RV32i_20231025 -GPI
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent15688 D:\project\Verilog\RISC_V_RV32i_20231025 -GPI\RISC_V_RV32i_20231019.xpr
+# Log file: D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/vivado.log
+# Journal file: D:/project/Verilog/RISC_V_RV32i_20231025 -GPI\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.xpr}
+update_compile_order -fileset sources_1
+add_files -norecurse {{D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/Uart/FSM_a_tx_inside.v} {D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/Uart/Uart.v} {D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/Uart/baudrate_generator.v} {D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/Uart/receiver.v}}
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files {{D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/Uart/FSM_a_tx_inside.v}}] -no_script -reset -force -quiet
+remove_files  {{D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/Uart/FSM_a_tx_inside.v}}
+add_files -norecurse {{D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/Uart/Transmitter.v}}
+update_compile_order -fileset sources_1
+synth_design -rtl -rtl_skip_mlo -name rtl_1

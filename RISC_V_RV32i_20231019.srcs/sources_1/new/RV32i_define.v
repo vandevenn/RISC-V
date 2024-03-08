@@ -1,0 +1,27 @@
+`define OPCODE_TYPE_R   7'b0110011
+`define OPCODE_TYPE_IL  7'b0000011
+`define OPCODE_TYPE_I   7'b0010011
+`define OPCODE_TYPE_S   7'b0100011
+`define OPCODE_TYPE_B   7'b1100011
+`define OPCODE_TYPE_U   7'b0110111
+`define OPCODE_TYPE_AU  7'b0010111
+`define OPCODE_TYPE_J   7'b1101111
+`define OPCODE_TYPE_JI  7'b1100111
+`define OPCODE_TYPE_LU  7'b0110111
+`define OPCODE_TYPE_AU  7'b0010111
+
+`define ADD 4'd0
+`define SUB 4'd1
+`define SLL 4'd2
+`define SRL 4'd3
+`define SRA 4'd4
+`define SLT 4'd5
+`define SLTU 4'd6
+`define XOR 4'd7
+`define OR 4'd8
+`define AND 4'd9
+`define SLLI 4'd10
+`define SRLI 4'd11
+`define SRAI 4'd12
+`define LUI 4'd13
+`define AUI 4'd14

@@ -1,0 +1,23 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Fri Oct 27 17:54:56 2023
+# Process ID: 2864
+# Current directory: D:/project/Verilog/RISC_V_RV32i_20231025 -GPI
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8420 D:\project\Verilog\RISC_V_RV32i_20231025 -GPI\RISC_V_RV32i_20231019.xpr
+# Log file: D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/vivado.log
+# Journal file: D:/project/Verilog/RISC_V_RV32i_20231025 -GPI\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.xpr}
+WARNING: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/RISC_V_RV32i_20231019.gen/sources_1'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/Uart/baudrate_generator.v'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/Uart/receiver.v'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'D:/project/Verilog/RISC_V_RV32i_20231025 -GPI/Uart/Transmitter.v'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.2/data/ip'.
+update_compile_order -fileset sources_1
